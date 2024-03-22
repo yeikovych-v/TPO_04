@@ -1,0 +1,17 @@
+spring:
+  h2:
+    console:
+      path: /h2
+  datasource:
+    url: jdbc:h2:file:./db/library
+    username: sa
+    password:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    defer-datasource-initialization: true
+  sql:
+    init:
+      mode: always
+#      data-locations: classpath:data.sql
